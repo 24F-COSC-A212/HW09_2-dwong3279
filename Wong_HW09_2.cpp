@@ -4,6 +4,8 @@
 // Author: Daniel Wong
 // Date Modified: 10/17/2024
 
+// output error (see fix)
+
 #include <iostream>
 using namespace std;
 
@@ -31,6 +33,7 @@ int main()
     {
         getline(inFile, inputLine, '\n');
         cout << setw(4) << right << lineNumber << ": " << inputLine << endl;
+        lineNumber++;
     }
 
     inFile.close();
